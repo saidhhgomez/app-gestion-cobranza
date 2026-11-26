@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Mi Inmueble",
+    "slug": "mi-inmueble",
+    "scheme": "miinmueble",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pe.miinmueble.app",
+      "infoPlist": { "ITSAppUsesNonExemptEncryption": false }
+    },
+    "android": {
+      "package": "pe.miinmueble.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#176B53"
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VIDEO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        { "image": "./assets/splash.png", "imageWidth": 200, "backgroundColor": "#F5F7F6" }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Selecciona una fotografía como evidencia de un recibo.",
+          "cameraPermission": "Toma una fotografía para adjuntarla a un recibo.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-local-authentication",
+        { "faceIDPermission": "Desbloquea Mi Inmueble con Face ID si decides activar esta opción." }
+      ]
+    ],
+    "experiments": { "typedRoutes": false }
+  }
+}

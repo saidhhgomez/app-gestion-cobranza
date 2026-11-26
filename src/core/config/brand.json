@@ -1,0 +1,7 @@
+{
+  "name": "Mi Inmueble",
+  "slug": "mi-inmueble",
+  "version": "1.0.0",
+  "currency": "PEN",
+  "timezone": "America/Lima"
+}

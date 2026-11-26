@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+coverage/
+.migration-backup/
+.test-output/
+*.tsbuildinfo
+*.log
+.env*
+!.env.example
+/android/
+/ios/
